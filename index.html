@@ -5,12 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test For Assignment</title>
+    <link rel="shortcut icon" href="https://wp.missmalini.com/wp-content/uploads/2018/09/travel.jpg"
+        type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
     <div class="welcome">
-        <h1>Welcome to <span>Emon's Travel</span></h1>
+        <h1>Hello there! <br>Welcome here!</h1>
     </div>
+    <br>
+    <div class="login">
+        <form id="login" onsubmit="validatePassword(event)">
+            <input type="text" placeholder="Email or phone" id="emailOrPhone">
+            <!-- Removed the duplicate 'type' attribute -->
+            <br>
+            <input type="password" placeholder="Enter your password" id="passwordInput">
+            <br>
+            <input type="submit" value="Login" id="button">
+        </form>
+    </div>
+    <script>
+        function validatePassword(event) {
+            event.preventDefault();
+            var password = document.getElementById('passwordInput').value;
+            if (password === 'chaityEmon') {
+                window.location.href = 'chaityEmon.html';
+            } else {
+                alert('Incorrect password. Please try again.');
+            }
+        }
+    </script>
 </body>
 
 </html>

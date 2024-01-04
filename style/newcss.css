@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+}
+body{
+    background-image: url('/style/love-cute-heart-emoji-png.webp'); 
+    background-size: cover;
+    backdrop-filter: blur(13px);
+}
+.love{
+    padding: 20px;
+    text-align: center;
+    line-height: 170px;
+}
