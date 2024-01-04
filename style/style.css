@@ -2,7 +2,7 @@
     margin: 0;
 }
 body{
-    background-image: url('/style/shutterstock_2044050407.jpg');
+    background-image: url('../style/shutterstock_2044050407.jpg');
     background-size: cover;
     backdrop-filter: blur(3px);
 }
