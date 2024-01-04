@@ -29,11 +29,14 @@
             event.preventDefault();
             var password = document.getElementById('passwordInput').value;
             if (password === 'chaityEmon') {
-                window.location.href = 'chaityEmon.html';
+                window.open('chaityEmon.html', '_blank');
+            }
+            else if (password === 'emonEmon') {
+                window.open('friend.html', '_blank');
             }
             else {
                 alert('Incorrect password. Please try again.');
-                window.location.href = 'fakePerson.html';
+                window.open('fakePerson.html', '_blank');
             }
         }
     </script>
