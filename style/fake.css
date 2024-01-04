@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(182, 248, 226) ;
+    backdrop-filter: blur(15px);
+}
+.fake{
+    margin: 100px;
+    font-size: 20px;
+    line-height: 100px;
+    text-align: center;
+    font-family: cursive;
+}

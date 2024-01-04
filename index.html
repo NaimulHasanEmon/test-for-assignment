@@ -18,7 +18,6 @@
     <div class="login">
         <form id="login" onsubmit="validatePassword(event)">
             <input type="text" placeholder="Email or phone" id="emailOrPhone">
-            <!-- Removed the duplicate 'type' attribute -->
             <br>
             <input type="password" placeholder="Enter your password" id="passwordInput">
             <br>
@@ -31,8 +30,10 @@
             var password = document.getElementById('passwordInput').value;
             if (password === 'chaityEmon') {
                 window.location.href = 'chaityEmon.html';
-            } else {
+            }
+            else {
                 alert('Incorrect password. Please try again.');
+                window.location.href = 'fakePerson.html';
             }
         }
     </script>
